@@ -1,0 +1,46 @@
+:root {
+    --accent: #4D1434;
+    --background: #EBEBEB;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+}
+
+div {
+    padding: 10px;
+}
+
+.title-bar {
+    display: grid; 
+    align-content: center; 
+    text-align: center; 
+    background-color: var(--accent);
+    color: white;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 5rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+}
+
+.dev-log {
+    min-height: 100%;
+}
+
+.socials {
+    text-align: center; 
+    background-color: var(--accent);
+}
+
+.socials img {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+}
