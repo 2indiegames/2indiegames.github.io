@@ -35,6 +35,12 @@ a {
     font-size: 1.5rem;
 }
 
+.key-visual {
+    height: 300px;
+    align-content: center;
+    text-align: center;
+}
+
 .dev-log {
     min-height: 100vh;
 }
