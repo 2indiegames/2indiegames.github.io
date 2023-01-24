@@ -35,13 +35,13 @@ a {
     font-size: 1.5rem;
 }
 
-.key-visual-div {
+.keyvisdiv {
     align-content: center;
     text-align: center;
 }
 
-.key-visual {
-    height: 50vw;
+.keyvis {
+    height: 50vh;
 }
 
 .dev-log {
