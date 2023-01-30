@@ -18,8 +18,6 @@ a {
 
 .title-bar {
     display: grid; 
-    align-content: center; 
-    text-align: center; 
     background-color: var(--accent);
     color: white;
 }
@@ -36,8 +34,6 @@ a {
 }
 
 .keyvisdiv {
-    align-content: center;
-    text-align: center;
 }
 
 .keyvis {
@@ -45,7 +41,7 @@ a {
 }
 
 .dev-log {
-    min-height: 100vh;
+    min-height: 25vh;
 }
 
 .log-entry {
@@ -56,8 +52,9 @@ a {
 }
 
 .dd-embed {
-    width: 60%;
-    height: 100vh;
+    width: 100%;
+    height: 70vh;
+    border: none;
 }
 
 .socials {
