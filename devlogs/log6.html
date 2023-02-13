@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Feedback Is a Helpful Thing</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="2indiegames">    
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme.css">
+    
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="../index.html">2indiegames</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">					
+					<div class="bio mb-3"><strong>Team</strong>: Veronica Armendariz, Isaac Johnson, Rachel Phuong, Yu Xin, Phoenix Yi</div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+			            <li class="list-inline-item"><a href="mailto:2indiegames@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.reddit.com/user/2indiegames" target="_blank"><i class="fab fa-reddit-alien fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.instagram.com/2indiegames" target="_blank"><i class="fab fa-instagram fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.tumblr.com/2indiegames-lumina" target="_blank"><i class="fab fa-tumblr fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://twitter.com/2indiegames" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+					    <a class="nav-link" href="../index.html"><i class="fas fa-home fa-fw mr-2"></i>Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="../kickstarter.html"><i class="fab fa-kickstarter-k fa-fw mr-2"></i>Kickstarter</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="../presskit.html"><i class="fa fa-images fa-fw mr-2"></i>Presskit</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2">Dev Log 6: Feedback Is a Helpful Thing</h2>
+				    <div class="meta mb-3"><span class="date">02/13/2023</span><span class="time">3 min read</span></div>
+			    </header>
+			    
+			    <div class="blog-post-body">
+					<p>This week was a focus on a final external playtest before polishing our game for the 
+						first rollout. First, here are the details of the playtesting over the course of the 
+						last two weeks. 
+					</p>
+
+					<h3 class="mt-3 mb-3">Playtest 1</h3>
+
+					<p>We implemented the paper prototype level with player controls including moving left 
+						and right, jumping, dashing, and gliding. 
+					</p>
+
+					<p>Overall, it seemed like people had fun playing our game and enjoyed the art style. 
+						However, there were complaints about the unintuitive control mapping. They also 
+						thought the camera was too zoomed in and didn’t show much of the environment, so we 
+						fixed that for the next playtest. Furthermore, we had some complaints that there 
+						was no double jump ability. Finally, the cooldown was too long to understand when 
+						the abilities were unusable.
+					</p>
+
+				    <h3 class="mt-3 mb-3">Playtest 2</h3>
+
+					<p>Here we continued to add features. We add the double jump ability as well as added 
+						more animations to make it clear that the player is doing different actions. We 
+						also changed some aesthetics such as the background, ability indicator, and some 
+						terrain changes. We also shortened the cooldown time.
+					</p>
+
+					<figure style="text-align: center;">
+						<img class="img-fluid" src="../assets/images/devlogs/log6-abilityindicator.png"/>
+						<figcaption>Ability Indicator</figcaption>
+					</figure>
+
+					<p>This time, we had the controls written out on a paper so that there would be less 
+						questions about the controls. Players still found them confusing though, including 
+						not being able to double jump by hitting the same key twice. Moreover, they felt 
+						that everything done with the left hand was a bit too crowded. 
+					</p>
+
+					<p>We also had a bug with movement where landing from a fall would momentarily stop 
+						the player, so we needed to fix that. Despite the issues, it seemed like players 
+						still enjoyed playing our game.
+					</p>
+
+				    <h3 class="mt-3 mb-3">Playtest 3</h3>
+
+					<p>At this point, we already began prepping for our rollout. We implemented the first 
+						two levels, where level 1 is a proper tutorial. We also added a shield ability, 
+						damaging terrain, and health system. We continued fixing some aesthetics like 
+						animations and an ability orb to follow the player. Finally, we made a large 
+						change with the controls mapping, including changing it from mainly one-handed to 
+						two-handed. 
+					</p>
+
+					<div style="display: flex; flex-wrap: wrap;">
+						<div style="flex: 50%; padding: 0 4px; text-align: center;">
+							<figure>
+								<img class="img-fluid" style="background-color: #414141;"
+									src="../assets/images/devlogs/log6-iconDash.png"/>
+								<figcaption>Dash Icon</figcaption>
+							</figure>
+						</div>
+						<div style="flex: 50%; padding: 0 4px; text-align: center;">		
+							<figure>
+								<img class="img-fluid" style="background-color: #414141;"
+									src="../assets/images/devlogs/log6-iconDoubleJump.png"/>
+								<figcaption>Double Jump Icon</figcaption>
+							</figure>
+						</div>
+					</div>
+
+					<p>Players liked the art, ability system, environment, and player character. Overall 
+						some of the controls were still a bit unintuitive (e.g., double jump), and there 
+						were some bugs with shield or otherwise confusing aspects such as the death pits 
+						and spikes. Furthermore, the levels may be better lengthened with a checkpoint 
+						system. 
+					</p>
+
+					<h3 class="mt-3 mb-3">Onwards</h3>
+
+					<p>From here, we took what we learned from the player preferences to improve our game 
+						before rollout. We remapped the levels and took at the shield ability to be 
+						acquired once level 3 is in place. We also implemented a checkpoint system and 
+						clearer icons for the abilities in the tutorial. To continue, we added sound 
+						effects to help add redundancy to the feedback the player received when moving or 
+						using abilities. Finally, we added a main menu which lets players choose one of two 
+						control schemes. 
+					</p>
+
+					<p>With the new additions, we updated the trailer! You can watch it below.
+					</p>
+
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe width="1280" height="720" src="https://www.youtube.com/embed/E6FPW_ysG6M" title="Lumina Announcement Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+
+					<br/>
+
+					<p>We are looking forward to seeing how the players will enjoy our game during the 
+						first rollout and in the meantime will begin working on the next level! We plan to 
+						fix the shield along with adding a shield-focused level for the players to continue 
+						their journey. Please look forward to it! 
+					</p>
+				    
+			    <nav class="blog-nav nav nav-justified my-5">
+				  <a class="nav-link-prev nav-item nav-link rounded-left" href="log5.html">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+				  <a class="nav-link-next nav-item nav-link d-none rounded-right" href="log7.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				</nav>
+				
+		    </div><!--//container-->
+	    </article>
+	    
+	    <footer class="footer text-center py-2 theme-bg-dark">
+		   
+	        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+		   
+	    </footer>
+    
+    </div><!--//main-wrapper-->
+       
+    <!-- Javascript -->          
+    <script src="../assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="../assets/plugins/popper.min.js"></script> 
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/blog.js"></script>  
+</body>
+</html> 
+
