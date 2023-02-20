@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Rollout and Logging, But Not the Tree Kind</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="2indiegames">    
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme.css">
+    
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="../index.html">2indiegames</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">					
+					<div class="bio mb-3"><strong>Team</strong>: Veronica Armendariz, Isaac Johnson, Rachel Phuong, Yu Xin, Phoenix Yi</div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+			            <li class="list-inline-item"><a href="mailto:2indiegames@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.reddit.com/user/2indiegames" target="_blank"><i class="fab fa-reddit-alien fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.instagram.com/2indiegames" target="_blank"><i class="fab fa-instagram fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.tumblr.com/2indiegames-lumina" target="_blank"><i class="fab fa-tumblr fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://twitter.com/2indiegames" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+					    <a class="nav-link" href="../index.html"><i class="fas fa-home fa-fw mr-2"></i>Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="../kickstarter.html"><i class="fab fa-kickstarter-k fa-fw mr-2"></i>Kickstarter</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="../presskit.html"><i class="fa fa-images fa-fw mr-2"></i>Presskit</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2">Dev Log 7: Rollout and Logging, But Not the Tree Kind</h2>
+				    <div class="meta mb-3"><span class="date">02/20/2023</span><span class="time">2 min read</span></div>
+			    </header>
+			    
+			    <div class="blog-post-body">
+					<p>You may have noticed a change on our front page, but we’ve accomplished our first 
+						rollout! We released the first two levels which consist of a tutorial and a level 
+						using the dash and double jump abilities. In the build, we also implemented 
+						analytics logging so that we can monitor how players are fairing in our game. The 
+						types of data we logged were player input, ability usage, game events, chosen 
+						control scheme, and other general statistics.
+					</p>
+
+					<p>Here are three interesting data summaries we found for data over the first 48 hours 
+						of release.
+					</p>
+
+					<figure style="text-align: center;">
+						<img class="img-fluid" src="../assets/images/devlogs/log7-time.png"/>
+					</figure>
+
+					<p>Most players took under 10 minutes to play. This is our expected time range. 
+						However, two players took over 100 minutes to play. We suspect they may have been 
+						away from the keyboard without closing the game.
+					</p>
+
+					<figure style="text-align: center;">
+						<img class="img-fluid" src="../assets/images/devlogs/log7-start.png"/>
+					</figure>
+
+					<p>We had a bit of a drop off after the first level and less than half of the players 
+						made it to the ending (shown as Level 3 in the graph). However, we were glad to 
+						see that over two-thirds of players stayed after the tutorial. 
+					</p>
+
+					<figure style="text-align: center;">
+						<img class="img-fluid" src="../assets/images/devlogs/log7-ability.png"/>
+					</figure>
+
+					<p>For our two levels, we had an expected number for ability use. The second level 
+						had much more double jumps since there were larger gaps between platforms. It 
+						didn’t seem like players had much difficulty utilizing the double jump ability as 
+						compared to during the playtesting.
+					</p>
+
+					<p>Overall, we are satisfied with how the rollout went. We built two extra levels: 
+						one for dash and one for double jump. We also tuned the dash to be longer. We 
+						would like to use next week as an A/B test to see how players this week versus 
+						this week fared using a short or long dash. We also began building a shield level 
+						as well as fixing the bug in the shield ability.
+					</p>
+
+					<p>For the next week, we plan to roll out the extra levels 1.5 and 2.5. We also plan 
+						to roll out the shield levels 3 and 3.5 and will begin to implement the grow 
+						ability. Finally, we begin to wrap up deliverables such as our press kit to prepare 
+						for investor presentations the following week. 
+					</p>
+				    
+			    <nav class="blog-nav nav nav-justified my-5">
+				  <a class="nav-link-prev nav-item nav-link rounded-left" href="log6.html">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+				  <a class="nav-link-next nav-item nav-link d-none rounded-right" href="log8.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				</nav>
+				
+		    </div><!--//container-->
+	    </article>
+	    
+	    <footer class="footer text-center py-2 theme-bg-dark">
+		   
+	        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+		   
+	    </footer>
+    
+    </div><!--//main-wrapper-->
+       
+    <!-- Javascript -->          
+    <script src="../assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="../assets/plugins/popper.min.js"></script> 
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/blog.js"></script>  
+</body>
+</html> 
+
