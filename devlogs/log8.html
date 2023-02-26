@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>Rollout and Logging, But Not the Tree Kind</title>
+    <title>Rollout the Second</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
@@ -66,72 +66,92 @@
 	    <article class="blog-post px-3 py-5 p-md-5">
 		    <div class="container">
 			    <header class="blog-post-header">
-				    <h2 class="title mb-2">Dev Log 7: Rollout and Logging, But Not the Tree Kind</h2>
-				    <div class="meta mb-3"><span class="date">02/20/2023</span><span class="time">2 min read</span></div>
+				    <h2 class="title mb-2">Dev Log 8: Rollout the Second</h2>
+				    <div class="meta mb-3"><span class="date">02/27/2023</span><span class="time">2 min read</span></div>
 			    </header>
 			    
 			    <div class="blog-post-body">
-					<p>You may have noticed a change on our front page, but we’ve accomplished our first 
-						rollout! We released the first two levels which consist of a tutorial and a level 
-						using the dash and double jump abilities. In the build, we also implemented 
-						analytics logging so that we can monitor how players are fairing in our game. The 
-						types of data we logged were player input, ability usage, game events, chosen 
-						control scheme, and other general statistics.
+					<p>Another week, another rollout, and this week we’ve added two new levels! We decided 
+						to extend our game out, so instead of 5 levels, one for each ability, you’ll get 
+						10 levels. This week’s rollout focused on more dash and double jump obstacles to 
+						overcome and introduced a new ability: shield. Also, we are officially listed on 
+						Itch, so anyone anywhere can play our game. 
 					</p>
 
-					<p>Here are three interesting data summaries we found for data over the first 48 hours 
-						of release.
+					<p>One A/B test we are conducting is for the dash length. We want to see whether 
+						lengthening the dash will support players better. The distance covered is now 
+						about twice of what it was in the first rollout.
 					</p>
 
-					<figure style="text-align: center;">
-						<img class="img-fluid" src="../assets/images/devlogs/log7-time.png"/>
-					</figure>
+					<div style="display: flex; flex-wrap: wrap;">
+						<div style="flex: 50%; padding: 0 4px;">
+							<img style="width: 100%; margin-top: 8px; vertical-align: middle;" 
+								src="../assets/images/devlogs/log8-shortdash.gif"/>
+						</div>
+						<div style="flex: 50%; padding: 0 4px;">
+							<img style="width: 100%; margin-top: 8px; vertical-align: middle;" 
+								src="../assets/images/devlogs/log8-longdash.gif"/>
+							</div>
+					</div> 
 
-					<p>Most players took under 10 minutes to play. This is our expected time range. 
-						However, two players took over 100 minutes to play. We suspect they may have been 
-						away from the keyboard without closing the game.
-					</p>
-
-					<figure style="text-align: center;">
-						<img class="img-fluid" src="../assets/images/devlogs/log7-start.png"/>
-					</figure>
-
-					<p>We had a bit of a drop off after the first level and less than half of the players 
-						made it to the ending (shown as Level 3 in the graph). However, we were glad to 
-						see that over two-thirds of players stayed after the tutorial. 
+					<p>We also would like to discuss some stats from players for the first 24 hours of 
+						our rollout. 
 					</p>
 
 					<figure style="text-align: center;">
-						<img class="img-fluid" src="../assets/images/devlogs/log7-ability.png"/>
+						<img class="img-fluid" src="../assets/images/devlogs/log8-time.png"/>
 					</figure>
 
-					<p>For our two levels, we had an expected number for ability use. The second level 
-						had much more double jumps since there were larger gaps between platforms. It 
-						didn’t seem like players had much difficulty utilizing the double jump ability as 
-						compared to during the playtesting.
+					<p>Above you can see the amount of time players took for each level. It was 
+						interesting that mostly players could finish the four levels in less than 
+						10 minutes.
 					</p>
 
-					<p>If you would like to see more data and thoughts, please see 
-						<a href="https://docs.google.com/presentation/d/1tySLeGuFvHuaSncNeR6GilLy1bf2yTAEbKenv8uPnpk/edit?usp=sharing">
-							our presentation on rollout and analytics</a>.
+					<figure style="text-align: center;">
+						<img class="img-fluid" src="../assets/images/devlogs/log8-players.png"/>
+					</figure>
+
+					<p>Next, you can see the number of players in each level. Retention seemed better 
+						than last week. We only lost one player at the start of each level.
 					</p>
 
-					<p>Overall, we are satisfied with how the rollout went. We built two extra levels: 
-						one for dash and one for double jump. We also tuned the dash to be longer. We 
-						would like to use next week as an A/B test to see how players this week versus 
-						this week fared using a short or long dash. We also began building a shield level 
-						as well as fixing the bug in the shield ability.
+					<figure style="text-align: center;">
+						<img class="img-fluid" src="../assets/images/devlogs/log8-abilities.png"/>
+					</figure>
+
+					<p>Finally, we look at the ability usage. With more dash puzzles, players are 
+						using dash more in the part 1 levels, but they are using it less in the 
+						part 2 levels which focus on double jump. This could be because the dash is 
+						longer so there is no need to use it twice to cover the same amount of distance.
 					</p>
 
-					<p>For the next week, we plan to roll out the extra levels 1.5 and 2.5. We also plan 
-						to roll out the shield levels 3 and 3.5 and will begin to implement the grow 
-						ability. Finally, we begin to wrap up deliverables such as our press kit to prepare 
-						for investor presentations the following week. 
+					<p>If you would like to see more data, feel free to take a look at
+						<a href="https://docs.google.com/presentation/d/1amtqcI_8YtoCV4mAEWbfrNrTe-OGn2BAEOg1ikOwPjA/edit?usp=sharing">
+							our presentation on our second rollout</a>.
+					</p>
+
+					<p>After rollout, we began working on part 3 levels which focus on the shield 
+						ability. We have three new levels mapped out for shield and acquiring the grow 
+						ability. We implemented a moving hazard and also adjusted the glide ability and 
+						its animation for future use. Finally, we fixed some bugs that came up in our 
+						rollout. Although we are a little behind schedule, we are making great progress 
+						in finishing up our game in two weeks.
+					</p>
+
+					<p>For other products, we updated our Kickstarter page, presskit, trailer, and 
+						design doc. We are also keeping up with our social media posts, so be sure to
+						check it out if you haven't already!
+					</p>
+
+					<p>This weekend we plan to roll out those three levels. Please look forward to it! 
+						Also, we will be finalizing our materials for our final presentation and 
+						convention poster. Next week in regards to game development will be mostly 
+						finishing the last three levels and hopefully getting some cutscenes into the game!
 					</p>
 				    
 			    <nav class="blog-nav nav nav-justified my-5">
-				  <a class="nav-link-prev nav-item nav-link rounded-left" href="log6.html">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
-				  <a class="nav-link-next nav-item nav-link rounded-right" href="log8.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				  <a class="nav-link-prev nav-item nav-link rounded-left" href="log7.html">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+				  <a class="nav-link-next nav-item nav-link d-none rounded-right" href="log9.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
 				</nav>
 				
 		    </div><!--//container-->
